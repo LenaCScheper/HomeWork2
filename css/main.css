@@ -30,7 +30,7 @@ ul{
     background-color: #2f303a;
 }
 
-/* site-nav*/
+/* Site-nav*/
 
 .site-nav .link{
 color: var(--primary-text-color) ;
@@ -39,6 +39,22 @@ color: var(--primary-text-color) ;
 .site-nav. link:focus {
     color: var (--accent-color);
 }
+.site-nav .link.current{
+color: var(--accent-color);
+}
+/* Contact-nav*/
+
+.contact-nav .title{
+    color: var(--title-text-color);
+}
+.contact-nav .title:hover,
+.contact-nav .title:focus{
+    color: var (var(--accent-color));
+}
+.contact-nav .title.current{
+    color: var(--accent-color);
+}
+
 /* Section*/
 .section-title{
      color: var(--primary-text-color) ;
@@ -67,4 +83,13 @@ background-color: var(--accent-color);
 font-weight: 24px;
 display: inline-block;
 
+}
+
+/* Footer*/
+.adres{
+    color: var(--primary-bg-color);
+    background-color: #2F303A;
+}
+.adres-list{
+    color: var(--primary-bg-color);
 }
