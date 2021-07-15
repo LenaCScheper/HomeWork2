@@ -1,7 +1,8 @@
 :root{
     --primary-text-color:  #212121;
-    --title-text-color:#757575:
-    --accent-color:#2196f3:
+    --title-text-color:#757575;
+    --accent-color:#2196f3;
+    --primary-bg-color:#ffffff;
 }
 
 body {
@@ -39,10 +40,31 @@ color: var(--primary-text-color) ;
     color: var (--accent-color);
 }
 /* Section*/
-.secion-title{
-     color: black;
+.section-title{
+     color: var(--primary-text-color) ;
  }
  /*Features */
  .features-list .title{
-     color: black;
+     color: var(--primary-text-color);
+    
+     
  }
+.description {
+    color: var(--title-text-color);
+}
+
+/* Comands*/
+.workers{
+    color: var(--primary-text-color);
+}
+.proffesion{
+    color: var(--title-text-color );
+}
+/* Button*/
+.button{
+color: var(--primary-bg-color);
+background-color: var(--accent-color);
+font-weight: 24px;
+display: inline-block;
+
+}
