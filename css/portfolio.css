@@ -1,0 +1,46 @@
+:root{
+    --primary-text-color:  #212121;
+    --title-text-color:#757575;
+    --accent-color:#2196f3;
+    --primary-bg-color:#ffffff;
+}
+
+body {
+    color:#212121 ;
+    background: #ffffff;
+}
+
+ul{
+    list-style: none;
+}
+.logo {
+    color: var(--primary-text-color); 
+ }
+ .span {
+     color: var(--accent-color);
+ }
+ 
+ /* цвет основного текста #212121 */
+ 
+ /* вторичный цвет текста #757575 */
+ 
+ /* белый цвет  #ffffff */
+ 
+ /* акцент #2196F3 */
+
+ /*Button*/
+ .navigation .title{
+     color: var(--primary-text-color);
+     font-family: inherit;
+
+ }
+.navigation . title:hover,
+.navigation .title:focus{
+    color: var(--accent-color)
+}
+
+ .navigation .title-primary{
+     color: var(--primary-bg-color ;
+     background-color: var(--accent-color);
+     
+ }
