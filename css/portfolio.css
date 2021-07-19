@@ -74,13 +74,13 @@ ul{
         text-decoration: none;
     }
     .addres{
-        color: var(--primary-bg-color)
+        color: var(--primary-bg-color);
         background-color: #2F303A;
         text-decoration: none;
         font-size: 14px;
         line-height: 1,7;
         letter-spacing: 0.03em;
-         }
+     }
     .street{
         color: var(--primary-bg-color);
         background-color: #2F303A;
