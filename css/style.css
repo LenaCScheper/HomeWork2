@@ -3,6 +3,7 @@
     --title-text-color:#757575;
     --accent-color:#2196f3;
     --primary-bg-color:#ffffff;
+    --secondary-bg-color:#2F303A;
 }
 
 body {
@@ -13,11 +14,8 @@ body {
     font-size: 14px;
     line-height: 1.7px;
     text-decoration: none;
+    
 }   
-
-ul{
-    list-style: none;
-}
 .logo {
    color: var(--primary-text-color); 
    font-family: raleway, sans-serif;
@@ -27,10 +25,9 @@ ul{
     line-height: 1.2;
    
 }
-.accent {
+.logo-accent {
     color: var(--accent-color);
     font-family: raleway, sans-serif;
-
 }
 
 /* цвет основного текста #212121 */
@@ -43,7 +40,7 @@ ul{
 
 /*Hero*/
 .hero{
-    background-color: #2F303A;
+    background-color:var(--secondary-bg-color);
 }
 .hero-title{
     color: var(--primary-bg-color);
@@ -53,56 +50,62 @@ ul{
     line-height: 1.4;
     text-align: center;
 }
-.hero .button-link {
+    .hero-button {
     color: var(--primary-bg-color);
-    font-family: inherit;
-    font-weight: 24px;
+    text-indent: inherit;
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;
     line-height:  1.9;
     display: flex;
     }
-    .button-link:hover,
-    .button-link:focus{
-    color:#188ce8 ;
+    .hero-button:hover,
+    .hero-button:focus{
+        
+    color:var(--accent-color) ;
 }
 
 
 /* Site-nav*/
-
-.site-nav .link{
+.site-nav{
+    list-style: none
+}
+.site-nav-link{
 color: var(--primary-text-color);
 letter-spacing: 0.02em;
 font-weight: 500;
 line-height: 1.14;
 text-decoration: none;
 }
-.site-nav. link:hover,
-.site-nav. link:focus {
-    color: #188ce8;
+.site-nav-link:hover,
+.site-nav-lin:focus {
+    color: var(--accent-color);
 }
-.site-nav .link.current{
+.site-nav-link-current{
 color: var(--accent-color);
-
-font-weight: 500;
-line-height: 1.14px;
+line-height: 16px;
+font-size: 14px;
+font-family: Roboto;
+letter-spacing: 0.02em;
+text-decoration: none;
 }
-/* Contact-nav*/
 
-.contact-nav .title{
+/* Contact-nav*/
+.contact-nav{
+list-style: none;
+}
+
+.contact-nav-title{
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
-    line-height: 1.14px;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
 }
-.contact-nav .title:hover,
-.contact-nav .title:focus{
-    color: var (var(--accent-color));
-}
-.contact-nav .title.current{
+.contact-nav-title:hover,
+.contact-nav-title:focus{
     color: var(--accent-color);
 }
 
@@ -115,56 +118,122 @@ line-height: 1.14px;
     text-align: center;
  }
  /*Features */
- .features-list .title{
+ .features{
+    list-style: none;
+ }
+ .features-title{
      color: var(--primary-text-color);
      font-weight: 700;
      line-height: 1.14;
 
  }
-.description {
+.features-description{
     color: var(--title-text-color);
     line-height: 1.7;
 }
+.pictures{
+    list-style: none;
+}
 
 /* Comands*/
-.workers{
+.comands{
+    background-color: #F5F4FA;
+
+}
+.comands-item{
+    list-style: none;
+}
+.comands-title{
+    color: var(--primary-text-color) ; 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+.comands-title-workers{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
 }
-.proffesion{
+.comands-title-proffesion{
     color: var(--title-text-color );
     font-size: 16px;
     line-height: 1.2;
 }
-/* Button*/
-
-
-
 
 /* Footer*/
-.footer-logo{
-    color: var(--primary-bg-color);
-    background-color: #2F303A;
-    font-weight: 700;
-    font-size: 26px;
-   
-}
-.addres{
-    color: var(--primary-bg-color)
-    background-color: #2F303A;
+.information{
+    font-family: Roboto, sans-serif;
+    background-color: var(--secondary-bg-color);
+    text-decoration: none;
+    font-size: 14px;
     line-height: 1.7;
     
 }
- .street{
+.information-logo{
+    color: var(--primary-bg-color);
+    font-family: raleway, sans-serif
+    line-height: 1.19;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.information-addres{
+    color: var(--primary-bg-color);
+    line-height: 1.7;
+    list-style: none;
+    
+}
+ .information-addres-street{
      color: var(--primary-bg-color);
-     background-color: #2F303A;
+     
  }
 
-.addres-list{
+.information-addres-list{
     color: rgba(255, 255, 255, 0.6);
-    background-color: #2F303A;
     line-height: 1.2;
-    font-family: raleway, sans-serif;
+
 }
+
+/* Portfolio*/
+
+.filter{
+    list-style: none;
+}
+.filter-item{
+color: var(--primary-text-color);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+
+.gallery{
+    list-style: none;
+}
+.gallery-title{
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+.gallery-text{
+    color: var(--title-text-color);
+    font-family: Roboto;    
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+
