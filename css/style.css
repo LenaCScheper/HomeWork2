@@ -1,23 +1,22 @@
 :root{
-    --primary-text-color:  #212121;
-    --title-text-color:#757575;
+    --primary-text-color:  #757575;
+    --title-text-color:#212121;
     --accent-color:#2196f3;
     --primary-bg-color:#ffffff;
     --secondary-bg-color:#2F303A;
 }
 
 body {
-    color:var(--primary-text-color);
+    color:var(--title-text-color);
     background: var(--primary-bg-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
-    line-height: 1.7px;
-    text-decoration: none;
+    line-height: 1.7;
     
 }   
 .logo {
-   color: var(--primary-text-color); 
+   color: var(--title-text-color);
    font-family: raleway, sans-serif;
    text-decoration: none;
    font-weight: 700;
@@ -57,12 +56,16 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height:  1.9;
-    display: flex;
+    
     }
     .hero-button:hover,
     .hero-button:focus{
         
     color:var(--accent-color) ;
+}
+.hero-button-main{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
 }
 
 
@@ -71,7 +74,7 @@ body {
     list-style: none
 }
 .site-nav-link{
-color: var(--primary-text-color);
+color: var(--title-text-color);
 letter-spacing: 0.02em;
 font-weight: 500;
 line-height: 1.14;
@@ -84,8 +87,6 @@ text-decoration: none;
 .site-nav-link-current{
 color: var(--accent-color);
 line-height: 16px;
-font-size: 14px;
-font-family: Roboto;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
@@ -96,10 +97,10 @@ list-style: none;
 }
 
 .contact-nav-title{
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.14;
     letter-spacing: 0.02em;
 
@@ -111,7 +112,7 @@ list-style: none;
 
 /* Section*/
 .section-title{
-     color: var(--primary-text-color) ;
+     color: var(--title-text-color) ;
      font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -122,13 +123,13 @@ list-style: none;
     list-style: none;
  }
  .features-title{
-     color: var(--primary-text-color);
+     color: var(--title-text-color);
      font-weight: 700;
      line-height: 1.14;
 
  }
 .features-description{
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
     line-height: 1.7;
 }
 .pictures{
@@ -144,20 +145,20 @@ list-style: none;
     list-style: none;
 }
 .comands-title{
-    color: var(--primary-text-color) ; 
+    color: var(--title-text-color) ; 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
 }
 .comands-title-workers{
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
 }
 .comands-title-proffesion{
-    color: var(--title-text-color );
+    color: var(--primary-text-color );
     font-size: 16px;
     line-height: 1.2;
 }
@@ -181,20 +182,25 @@ list-style: none;
     text-decoration: none;
 }
 .information-addres{
+    font-style: normal;
     color: var(--primary-bg-color);
     line-height: 1.7;
     list-style: none;
-    
 }
+
  .information-addres-street{
      color: var(--primary-bg-color);
-     
+    
  }
 
 .information-addres-list{
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.2;
 
+}
+.information-addres-list:hover,
+.information-addres-list:focus{
+    color: var(--accent-color);
 }
 
 /* Portfolio*/
@@ -203,7 +209,7 @@ list-style: none;
     list-style: none;
 }
 .filter-item{
-color: var(--primary-text-color);
+color: var(--title-text-color);
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -215,13 +221,20 @@ line-height: 1.6;
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 }
+.filter-button-main{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
 
 
 .gallery{
     list-style: none;
 }
+.gallery-link{
+    text-decoration: none;
+}
 .gallery-title{
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
     font-family: Roboto;
     font-weight: 700;
     font-size: 18px;
@@ -230,7 +243,7 @@ line-height: 1.6;
     text-decoration: none;
 }
 .gallery-text{
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
     font-family: Roboto;    
     font-size: 16px;
     line-height: 1.9;
